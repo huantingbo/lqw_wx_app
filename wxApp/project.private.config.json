@@ -1,0 +1,22 @@
+{
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "projectname": "%E6%B7%B1%E5%A4%9C%E4%B9%8B%E6%88%91%E5%9C%A8%E5%BA%8A%E5%BA%95%E4%B8%8E%E4%BD%A0%E8%83%8C%E9%9D%A0%E8%83%8C",
+  "setting": {
+    "compileHotReLoad": true,
+    "urlCheck": true,
+    "coverView": true,
+    "lazyloadPlaceholderEnable": false,
+    "skylineRenderEnable": false,
+    "preloadBackgroundData": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "showES6CompileOption": false,
+    "bigPackageSizeSupport": false,
+    "useApiHook": true,
+    "checkInvalidKey": true,
+    "useStaticServer": false,
+    "useLanDebug": false,
+    "ignoreDevUnusedFiles": true
+  },
+  "libVersion": "3.17.1"
+}

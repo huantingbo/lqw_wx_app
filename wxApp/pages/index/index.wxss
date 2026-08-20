@@ -1,0 +1,203 @@
+/* 整个页面 */
+.page {
+  width: 100%;
+  height: 100vh;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background: #05060a;
+}
+
+
+/* 背景图片 */
+.background {
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 1;
+}
+
+
+/* 黑色遮罩 */
+.mask {
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 2;
+}
+
+
+/* 主要内容 */
+.main {
+  position: relative;
+
+  z-index: 3;
+
+  height: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  box-sizing: border-box;
+
+  transform: translateY(-400rpx);
+
+  padding-left: 60rpx;
+  padding-right: 60rpx;
+}
+
+
+/* 标题 */
+.title {
+  width: 100%;
+
+  font-size: 44rpx;
+
+  font-weight: bold;
+
+  color: #ffffff;
+
+  text-align: center;
+
+  line-height: 10rpx;
+  text-shadow:
+  0 2rpx 8rpx rgba(0, 0, 0, 0.95);
+
+  letter-spacing: 4rpx;
+}
+
+
+/* 星星 */
+.stars {
+  margin-top: 10rpx;
+
+  font-size: 48rpx;
+
+  color: #ffffff;
+
+  animation: starFlash 2.5s infinite;
+  text-shadow:
+  0 2rpx 8rpx rgba(0, 0, 0, 0.95);
+}
+
+
+/* 星星动画 */
+@keyframes starFlash {
+
+  0% {
+    opacity: 0.25;
+    transform: scale(0.95);
+  
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.08);
+  }
+
+  100% {
+    opacity: 0.25;
+    transform: scale(0.95);
+  }
+
+}
+
+
+/* 中间文字 */
+.sentence {
+  width: 90%;
+
+  min-height: 10rpx;
+
+  margin-top: 10rpx;
+
+  font-size: 32rpx;
+
+  color: rgba(255, 255, 255, 0.92);
+
+  text-align: center;
+
+  line-height: 60rpx;
+  text-shadow:
+  0 2rpx 8rpx rgba(0, 0, 0, 0.95);
+
+}
+
+
+/* 换一句按钮 */
+.changeButton {
+  width: 320rpx;
+
+  margin-top: 40rpx;
+
+  border-radius: 50rpx;
+
+  background: rgba(255, 255, 255, 0.16);
+
+  color: #ffffff;
+
+  font-size: 30rpx;
+
+  border: 1rpx solid rgba(255, 255, 255, 0.35);
+  text-shadow:
+  0 2rpx 8rpx rgba(0, 0, 0, 0.95);
+}
+
+
+/* 播放音乐按钮 */
+.musicButton {
+  width: 320rpx;
+
+  margin-top: 25rpx;
+
+  border-radius: 50rpx;
+
+  background: rgba(0, 0, 0, 0.35);
+
+  color: rgba(255, 255, 255, 0.9);
+
+  font-size: 28rpx;
+
+  border: 1rpx solid rgba(255, 255, 255, 0.25);
+  text-shadow:
+  0 2rpx 8rpx rgba(0, 0, 0, 0.95);
+}
+
+
+/* 去掉按钮默认边框 */
+button::after {
+  border: none;
+}
+
+
+/* 最下面的小字 */
+.bottomText {
+  position: absolute;
+
+  bottom: 0rpx;
+
+  font-size: 30rpx;
+
+  color: rgb(247, 181, 0);
+
+  letter-spacing: 15rpx;
+  text-shadow:
+  0 2rpx 8rpx rgb(0, 0, 0);
+}

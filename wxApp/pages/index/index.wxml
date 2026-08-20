@@ -1,0 +1,60 @@
+<view class="page">
+
+<!-- 夜晚背景图片 -->
+<image
+  class="background"
+  src="/images/night.jpg"
+  mode="aspectFill"
+></image>
+
+<!-- 黑色半透明遮罩，让文字更清楚 -->
+<view class="mask"></view>
+
+
+<!-- 页面主要内容 -->
+<view class="main">
+
+  <!-- 标题 -->
+  <text class="title">
+    深夜之我贴在床底与你背靠背
+  </text>
+
+
+  <!-- 星星 -->
+  <view class="stars">
+    ✦　✧　✦
+  </view>
+
+
+  <!-- 随机文字 -->
+  <text class="sentence">
+    {{content}}
+  </text>
+
+
+  <!-- 换一句 -->
+  <button
+    class="changeButton"
+    bindtap="changeWord"
+  >
+    换一句
+  </button>
+
+
+  <!-- 音乐按钮 -->
+  <button
+    class="musicButton"
+    bindtap="toggleMusic"
+  >
+    {{musicPlaying ? "暂停音乐" : "播放音乐"}}
+  </button>
+
+
+  <!-- 底部文字 -->
+  <text class="bottomText">
+    今夜，我们背靠背。
+  </text>
+
+</view>
+
+</view>
